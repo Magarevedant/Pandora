@@ -61,12 +61,10 @@ def op_tool(tool,cmd):
 	path = "tools/"+tool+"/"
 	if cmd == "open":
 		try:
-			file = path+tool+".py"
-			file = open(file,"r")
-			code = file.read()
-			file.close()
-			return exec(code)
-		except:
+			file_path = path+tool+".py"
+			os.system("python "+file_path)
+		except Exception as e:
+			warn(e)
 			warn("something went wrong while opening "+tool)
 	elif cmd == "help":
 		file = path+"help.txt"
