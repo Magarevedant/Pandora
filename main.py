@@ -62,7 +62,7 @@ def op_tool(tool,cmd):
 	if cmd == "open":
 		try:
 			file_path = path+tool+".py"
-			os.system("python "+file_path)
+			os.system("python "+file_path) or os.system("python3 "+file_path)
 		except Exception as e:
 			warn(e)
 			warn("something went wrong while opening "+tool)
