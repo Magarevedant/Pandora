@@ -1,0 +1,11 @@
+scan helps to scan the open ports of target.
+
+  just specify the target
+  and select the mode of scan.
+  modes:
+    1: scan for open port from 1 - 1024
+    2: scan for open port from 1 - 49152
+    3: scan for open port in 20,21,22,23,25,53,80,110,443
+    4: provide custom port numbers to scan (seprate by blank)
+          ex- 20 78 95 06
+    5: to exit the tool
